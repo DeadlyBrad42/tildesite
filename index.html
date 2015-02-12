@@ -1,10 +1,87 @@
+<!DOCTYPE html>
+<!-- https://github.com/DeadlyBrad42/tildesite -->
+
 <html>
-<head><title>My tilde.club page</title></head>
+<head>
+  <title>~&clubs; deadlybrad</title>
+  <style type="text/css">
+  body{
+    background-color: #808080;
+  }
+
+  .wrapper {
+    width: 600px;
+    text-align: center;
+    background-color: #D3D3D3;
+    border: 10px outset #FF0000;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+    -webkit-animation: marquee 15s linear infinite;
+  }
+  @keyframes marquee {
+    0%   { text-indent: 100%; }
+    100% { text-indent: -200%; }
+  }
+  @-webkit-keyframes marquee {
+    0%   { text-indent: 100%; }
+    100% { text-indent: -200%; }
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  section.social ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  footer {
+    font-style: italic;
+  }
+  </style>
+</head>
 <body>
 
-<h1>~~~this is my tilde.club page~~~~</h1>
+<div class="wrapper">
+  <header>
+    <h1 class="marquee">~~~ deadlybrad's tilde.club page ~~~~</h1>
+    <img src="img/avatar_websafe.png" width="300" height="300" alt="avatar" />
+  </header>
 
-<p>Just log in with your secure internet shell to change this file!</p>
+  <hr />
+
+  <section class="social">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://github.com/DeadlyBrad42/">Github</a></li>
+      <li><a href="http://www.bradmason.net/">BradMason.net</a></li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section class="about">
+    <h2>About</h2>
+    <p>Brad Mason is a software developer based in <a href="http://maps.google.com/maps?q=pittsburgh,+pa&amp;z=12">Pittsburgh, PA</a>. He spends his days at <a href="http://www.acatar.com/">Acatar</a>, toiling away at creating The Next Big Thing in online education. By night, he's a hobbyist <a href="bradmason.net/games">indie game developer</a>.</p>
+  </section>
+
+  <hr />
+
+  <footer>
+    <p>Last updated 2/11/15</p>
+  </footer>
+
+</div>
 
 </body>
 </html>
